@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package protobuff;
+
+option go_package = "./";
+
+message ServiceDiscovery {
+  string order_service_uri = 1;
+}
+
+message EventStore {
+string aggregate_id = 1;
+string aggregate_type = 2;
+string event_id = 3;
+string event_type = 4;
+string event_data = 5;
+}
