@@ -1,2 +1,2 @@
-proto:
-	protoc -I protobuff/ protobuff/protobuff.proto --go_out=plugins=grpc:protobuff
+build:
+	protoc -I order/ order/order.proto --go_out=plugins=grpc:order
